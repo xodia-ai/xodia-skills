@@ -1,0 +1,15 @@
+{
+  "name": "xodia",
+  "owner": {
+    "name": "Xodia"
+  },
+  "description": "Skills and tools for building websites in Xodia with your own AI.",
+  "plugins": [
+    {
+      "name": "xodia",
+      "source": "./plugins/xodia",
+      "description": "Build and edit your Xodia websites with your own AI.",
+      "version": "0.7.0"
+    }
+  ]
+}
