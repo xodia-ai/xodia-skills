@@ -1,29 +1,33 @@
-# Xodia for your AI
+# Xodia for Claude
 
-Connects your own AI to [Xodia](https://xodia.ai), the visual website builder for real code. Xodia's skills load from your Xodia account once you sign in; nothing else is needed here.
+[Xodia](https://xodia.ai) is a visual website builder for real code: your site stays a normal Vite and React or plain HTML project in a git repository, with a live preview in Xodia. This plugin connects Claude to your Xodia account so Claude can build pages and sections, change design and content, improve SEO and speed, and fix problems, while you watch the live preview and review every change before saving.
 
-## Claude Code
+## Install
 
 ```sh
-claude plugin marketplace add shehan979/xodia-skills
+claude plugin marketplace add https://app.xodia.ai/plugin/marketplace.json
 claude plugin install xodia@xodia
 ```
 
-Restart Claude Code, type `/mcp`, choose **xodia** and sign in with your Xodia account. Then:
+Restart Claude Code, type `/mcp`, choose **xodia** and sign in with your Xodia account.
 
-- `/xodia:build a landing page for my bakery` builds or redesigns a site
-- `/xodia:work` listens for the changes you ask for in Xodia and works through them
-- `/xodia:fix the menu page looks broken on phones` finds and fixes problems
-- `/xodia:review` checks unsaved changes before you save
-- `/xodia:seo` improves search and AI search readiness
-- `/xodia:speed` makes pages load faster
+## Commands
 
-## Claude app (claude.ai and Claude Desktop)
+- `/xodia:build`: Build or redesign a Xodia website from a description
+- `/xodia:work`: Listen for change requests from Xodia and work through them
+- `/xodia:animate`: Add interactions and animation to a Xodia site: hover, reveals, scroll effects, page transitions
+- `/xodia:content`: Add or change CMS content and collections on a Xodia site: posts, projects, team, drafts
+- `/xodia:polish`: Give a Xodia page or component a finishing pass on the small design details
+- `/xodia:fix`: Find and fix what's broken in a Xodia preview
+- `/xodia:review`: Review a Xodia project's draft changes before saving or publishing
+- `/xodia:seo`: Check and improve a Xodia site's SEO and AI search readiness
+- `/xodia:speed`: Make a Xodia site load faster
 
-Settings, Connectors, Add custom connector: `https://staging.xodia.ai/mcp`, then sign in with your Xodia account.
+## What this plugin runs and sends
 
-## Other MCP clients
+- It runs nothing on your machine. It adds one remote MCP server, `https://app.xodia.ai/mcp`, over HTTPS, and you sign in to it with OAuth.
+- Through that server Claude reads and edits files in your Xodia projects, runs checks, reads preview logs, takes preview screenshots and answers requests you send from Xodia. Everything goes only to Xodia, under your account.
+- Changes stay as drafts in Xodia until you save or publish them; that can push to the git repository you connected.
+- Xodia's working guides (skills) load from your account when Claude needs them.
 
-Add a remote MCP server (Streamable HTTP with OAuth) at `https://staging.xodia.ai/mcp`.
-
-Powered by [Zuzo Studio](https://zuzostudio.com).
+Support: [xodia.ai](https://xodia.ai). Powered by [Zuzo Studio](https://zuzostudio.com).

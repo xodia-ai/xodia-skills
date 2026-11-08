@@ -2,7 +2,7 @@
   "mcpServers": {
     "xodia": {
       "type": "http",
-      "url": "https://staging.xodia.ai/mcp"
+      "url": "https://app.xodia.ai/mcp"
     }
   }
 }

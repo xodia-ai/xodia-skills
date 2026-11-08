@@ -1,8 +1,0 @@
-{
-  "name": "xodia",
-  "version": "0.7.0",
-  "description": "Connects your AI to Xodia: the xodia MCP server and its commands. Xodia's skills load from your Xodia account.",
-  "author": {
-    "name": "Xodia"
-  }
-}

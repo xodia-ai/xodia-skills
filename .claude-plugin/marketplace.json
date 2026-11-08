@@ -1,15 +1,14 @@
 {
   "name": "xodia",
   "owner": {
-    "name": "Xodia"
+    "name": "Zuzo Studio",
+    "url": "https://xodia.ai"
   },
-  "description": "Skills and tools for building websites in Xodia with your own AI.",
+  "description": "Xodia for Claude.",
   "plugins": [
     {
       "name": "xodia",
-      "source": "./plugins/xodia",
-      "description": "Build and edit your Xodia websites with your own AI.",
-      "version": "0.7.0"
+      "source": "./"
     }
   ]
 }
