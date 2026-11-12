@@ -27,7 +27,7 @@ Restart Claude Code, type `/mcp`, choose **xodia** and sign in with your Xodia a
 
 - It runs nothing on your machine. It adds one remote MCP server, `https://app.xodia.ai/mcp`, over HTTPS, and you sign in to it with OAuth.
 - Through that server Claude reads and edits files in your Xodia projects, runs checks, reads preview logs, takes preview screenshots and answers requests you send from Xodia. Everything goes only to Xodia, under your account.
-- Changes stay as drafts in Xodia until you save or publish them; that can push to the git repository you connected.
+- Xodia saves each change as Claude makes it, and you see it at once. Pushing to the git repository you connected and publishing the site happen only when you choose them in Xodia.
 - Xodia's working guides (skills) load from your account when Claude needs them.
 
 Support: [xodia.ai](https://xodia.ai). Powered by [Zuzo Studio](https://zuzostudio.com).
